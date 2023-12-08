@@ -230,20 +230,20 @@ And don't forget that users need some confirmation of a copy, so alter the butto
 In order to see how well you're doing with this project, here are all the things we need would like to see from you. If you get all of these, then you know that you're where you need to be!
 
 ## Layout: Structure
-- [ ] There is a single `main` element on the page
-- [ ] There is a single `h1` element on the page
-- [ ] There is a `form`
-- [ ] The form has an `h2` label
-- [ ] The form has an `text` input and label for the palette title
-- [ ] The form has 3 `color` type inputs and labels for the color inputs
-- [ ] The form has a `fieldset` with a `legend` for the temperature setting
-- [ ] The form has 3 `radio` inputs and `labels` for the temperature setting
-- [ ] The form has `neutral` as the default temperature setting
-- [ ] The form has a `button` to submit the form
-- [ ] There is an `h2` showing the palettes section
-- [ ] There is a `section` for the palettes
-- [ ] The page has a `ul` and `li` items that show each palette
-- [ ] Each palette has the 3 colors clearly visible somehow
+- [X] There is a single `main` element on the page
+- [X] There is a single `h1` element on the page
+- [X] There is a `form`
+- [X] The form has an `h2` label
+- [X] The form has an `text` input and label for the palette title
+- [X] The form has 3 `color` type inputs and labels for the color inputs
+- [X] The form has a `fieldset` with a `legend` for the temperature setting
+- [X] The form has 3 `radio` inputs and `labels` for the temperature setting
+- [X] The form has `neutral` as the default temperature setting
+- [X] The form has a `button` to submit the form
+- [X] There is an `h2` showing the palettes section
+- [X] There is a `section` for the palettes
+- [X] The page has a `ul` and `li` items that show each palette
+- [X] Each palette has the 3 colors clearly visible somehow
 - [ ] Each palette has white and black text overlaid on each of the colors
 - [ ] Each palette *somehow* has white and black border on each of the colors
 - [ ] Each palette has 3 copy buttons that show the name of the color they *would* copy

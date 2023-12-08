@@ -5,7 +5,7 @@ console.log(palettes); // test
 
 document.addEventListener("DOMContentLoaded", function () {
   // Get the container element, aka div
-  const palettesContainer = document.getElementById("app");
+  const palettesContainer = document.getElementById("section");
 
   // Create an unordered list to display color palettes
   const ul = document.createElement("ul");

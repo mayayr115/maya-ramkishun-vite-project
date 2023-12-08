@@ -10,10 +10,30 @@
   <body>
     <main>
       <div id="app">
-        <h1>Palette Picker</h1>
         <form>
-          <h2>Colors</h2>
-          
+          <h1 id="heading">Palette Picker</h1>
+          <label for="Palette Title">Palette Title:</label>
+          <input type="text" name='title input' id="title" placeholder="Enter title name"/>
+
+          <label for="color1">Color 1</label>
+          <input type="color" name="color1" id="color">
+          <label for="color2">Color 2</label>
+          <input type="color" name="color2" id="color" >
+          <label for="color3">Color 3</label>
+          <input type="color" name="color3" id="color" >
+
+          <fieldset>
+            <legend>Temperature Setting</legend>
+            <label for="warm">Warm</label>
+            <input type="radio" name="warm" id="temp">
+            <label for="neutral">Neutral</label>
+            <input type="radio" name="neutral" id="temp" checked>
+            <label for="cool">Cool</label>
+            <input type="radio" name="cool" id="temp">
+          </fieldset>
+          <button type="submit">Submit</button>
+          <h2><label for="Palettes">Palettes</label></h2>
+          <section id="section"></section>
         </form>
       </div>
     </main>
