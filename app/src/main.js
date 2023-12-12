@@ -26,3 +26,12 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+const handleSubmit = (e) => {
+  e.preventDefault()
+  addPalette()
+  const form = e.target
+  form.reset();
+};
+
+const palettePicker = document.querySelector('#palette-picker');
+palettePicker.addEventListener('submit', handleSubmit);

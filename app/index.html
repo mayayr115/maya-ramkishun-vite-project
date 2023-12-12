@@ -10,26 +10,26 @@
   <body>
     <main>
       <div id="app">
-        <form>
+        <form id="palette-picker" aria-labelledby="form-heading">
           <h1 id="heading">Palette Picker</h1>
           <label for="Palette Title">Palette Title:</label>
           <input type="text" name='title input' id="title" placeholder="Enter title name"/>
 
           <label for="color1">Color 1</label>
-          <input type="color" name="color1" id="color">
+          <input type="color" name="color1" class="color">
           <label for="color2">Color 2</label>
-          <input type="color" name="color2" id="color" >
+          <input type="color" name="color2" class="color" >
           <label for="color3">Color 3</label>
-          <input type="color" name="color3" id="color" >
+          <input type="color" name="color3" class="color" >
 
           <fieldset>
             <legend>Temperature Setting</legend>
             <label for="warm">Warm</label>
-            <input type="radio" name="warm" id="temp">
+            <input type="radio" value="warm" name="temperature" id="warm" class="temp">
             <label for="neutral">Neutral</label>
-            <input type="radio" name="neutral" id="temp" checked>
+            <input type="radio" value="neutral" name="temperature" id="neutral" class="temp" checked>
             <label for="cool">Cool</label>
-            <input type="radio" name="cool" id="temp">
+            <input type="radio" value="cool" name="temperature" id="cool" class="temp">
           </fieldset>
           <button type="submit">Submit</button>
           <h2><label for="Palettes">Palettes</label></h2>
