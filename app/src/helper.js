@@ -33,3 +33,12 @@ const addPalette = (newPalette) => {
 const removePalette = (paletteUuid) => {
 
 }
+
+export {
+  setLocalStorageKey,
+  getLocalStorageKey,
+  getPalettes,
+  setPalettes,
+  addPalette,
+  removePalette,
+};
