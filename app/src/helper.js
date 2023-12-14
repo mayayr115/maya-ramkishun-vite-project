@@ -1,8 +1,6 @@
 import palettes from '../palettes.json'; // JSON data
 
-const setLocalStorageKey = (key, value) => {
-  localStorage.setItem(key, JSON.stringify(value))
-}
+const setLocalStorageKey = (key, value) => localStorage.setItem(key, JSON.stringify(value))
 
 const getLocalStorageKey = (key) => {
   try {
@@ -13,55 +11,24 @@ const getLocalStorageKey = (key) => {
   }
 }
 
-const getPalettes = () => {
-  const palettesContainer = document.getElementById('section');
+export const getPalettes = () => getLocalStorageKey('palettes') || [];
 
-  const ul = document.createElement('ul');
+export const setPalettes = (newPalettes) => setLocalStorageKey('palettes', newPalettes);
 
-  palettes.forEach((palette) => {
-    const li = document.createElement('li');
-    li.innerHTML = `<strong>${
-      palette.title
-    }</strong><div class="color-swatch-container">${palette.colors
-      .map(
-        (color) =>
-          `<div class="color-swatch" style="background-color: ${color};"></div>`
-      )
-      .join('')}</div>(Temperature: ${palette.temperature})`;
+const initPalettesIfEmpty = () => setPalettes(palettes);
 
-    ul.appendChild(li);
-  });
-
-  palettesContainer.appendChild(ul);
+export const addPalette = (newPalette) => {
+  const newPalettes = getPalettes();
+  setPalettes([...newPalettes, newPalette]);
 }
 
-const setPalettes = (newPalettes) => {
-
-}
-
-const initPalettesIfEmpty = () => {
-
-}
-
-const addPalette = (newPalette) => {
-  
-}
-
-const loadPalette = () => {
-
-}
-
-const removePalette = (paletteUuid) => {
-
+export const removePalette = (paletteUuid) => {
+  const palettes = getPalettes().filter((palette) => palette !== paletteUuid);
+  getPalettes([...palettes]);
 }
 
 export {
   setLocalStorageKey,
   getLocalStorageKey,
-  getPalettes,
-  setPalettes,
   initPalettesIfEmpty,
-  addPalette,
-  loadPalette,
-  removePalette,
 };

@@ -13,7 +13,7 @@
         <form id="palette-picker" aria-labelledby="form-heading">
           <h1 id="heading">Palette Picker</h1>
           <label for="Palette Title">Palette Title:</label>
-          <input type="text" name='title input' id="title" placeholder="Enter title name"/>
+          <input type="text" name='title' id="title" placeholder="Enter title name" required/>
 
           <label for="color1">Color 1</label>
           <input type="color" name="color1" class="color">
@@ -33,7 +33,7 @@
           </fieldset>
           <button type="submit">Submit</button>
           <h2><label for="Palettes">Palettes</label></h2>
-          <section id="section"></section>
+          <section id="section" aria-labelledby="palettes"></section>
         </form>
       </div>
     </main>

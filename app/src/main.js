@@ -1,23 +1,25 @@
 import './style.css';
-import {
-  setLocalStorageKey,
-  getLocalStorageKey,
-  getPalettes,
-  setPalettes,
-  initPalettesIfEmpty,
-  addPalette,
-  loadPalette,
-  removePalette,
-} from './helper.js';
+import { v4 as uuidv4 } from 'uuid'
+import { loadPalettes } from './util.js';
+import { addPalette, removePalette } from './helper.js';
 
-
-document.addEventListener('DOMContentLoaded', getPalettes());
+document.addEventListener('DOMContentLoaded', loadPalettes());
 
 const handleSubmit = (e) => {
   e.preventDefault();
-  addPalette();
   const form = e.target;
-  console.log(form)
+  const formData = new FormData(form);
+  const formObj = Object.fromEntries(formData)
+  
+  const newPalette = {
+    uuid:uuidv4(),
+    title: formObj.title,
+    colors: [formObj.color1, formObj.color2, formObj.color3],
+    temperature: formObj.temperature,
+  };
+
+  addPalette(newPalette);
+
   form.reset();
 };
 
