@@ -251,34 +251,34 @@ In order to see how well you're doing with this project, here are all the things
 - [ ] Each palette has a banner along the bottom with the name of the temperature
 - [ ] Each palette has a banner along the bottom that is colored by the temperature
   - (gray = neutral, red = warm, blue = cool)
-- [ ] Palettes appear next to each other in a grid-like pattern (flex or grid presentations fine)
+- [X] Palettes appear next to each other in a grid-like pattern (flex or grid presentations fine)
 
 ## layout: Accessibility
-- [ ] The form has an `aria-label` or `aria-labelledby` attribute that describes the form
+- [X] The form has an `aria-label` or `aria-labelledby` attribute that describes the form
 - [ ] The section has an `aria-label` or `aria-labelledby` attribute that describes the section
 - [ ] There are no instances of recreating any semantic elements
 
 ## Functionality
 - [ ] The title is a `required` field, and the form cannot be submitted without it
-- [ ] Clicking the form submit button does not reload the page because the default behavior is prevented
+- [X] Clicking the form submit button does not reload the page because the default behavior is prevented
 - [ ] Clicking the form submit button creates a new palette in the palettes section
-- [ ] Clicking the form submit button clears the form
+- [X] Clicking the form submit button clears the form
 - [ ] Clicking one of the copy buttons copies the hex code of the color to the clipboard
 - [ ] Clicking the copy button copies the selected color to the user's clipboard
 - [ ] Clicking the copy button alters the text for a second to say "Copied hex!" for 1 second before switching back
 - [ ] Clicking the delete button removes the palette from the page
 - [ ] Clicking the delete button removes the palette from localStorage (does not come back upon reload of page)
-- [ ] On first visit to the page, there are 3 default palettes
+- [X] On first visit to the page, there are 3 default palettes
 - [ ] If a user deletes all their palettes, on next reload, the default palettes appear again
 - [ ] A user's palettes are saved to localStorage
 
 ## Meta
-- [ ] The project is created using Vite
-- [ ] The code exists in more than one JS file
-- [ ] The project is deployed via GitHub Pages properly
-- [ ] The `palettes.json` file is read properly
-- [ ] css flexbox or grid was used
+- [X] The project is created using Vite
+- [X] The code exists in more than one JS file
+- [X] The project is deployed via GitHub Pages properly
+- [X] The `palettes.json` file is read properly
+- [X] css flexbox or grid was used
 - [ ] The code does not render unescaped text directly to the DOM (createElement or other escape method used)
-- [ ] `.innerHTML` or `createElement/.append` is used properly at some point in the project
+- [X] `.innerHTML` or `createElement/.append` is used properly at some point in the project
 - [ ] `.innerHTML` or `.remove()` is used to delete elements from the DOM.
 - [ ] The `setTimeout` method is used to rewrite the copy button text
