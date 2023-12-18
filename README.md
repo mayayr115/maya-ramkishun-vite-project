@@ -255,11 +255,11 @@ In order to see how well you're doing with this project, here are all the things
 
 ## layout: Accessibility
 - [X] The form has an `aria-label` or `aria-labelledby` attribute that describes the form
-- [ ] The section has an `aria-label` or `aria-labelledby` attribute that describes the section
+- [X] The section has an `aria-label` or `aria-labelledby` attribute that describes the section
 - [ ] There are no instances of recreating any semantic elements
 
 ## Functionality
-- [ ] The title is a `required` field, and the form cannot be submitted without it
+- [X] The title is a `required` field, and the form cannot be submitted without it
 - [X] Clicking the form submit button does not reload the page because the default behavior is prevented
 - [ ] Clicking the form submit button creates a new palette in the palettes section
 - [X] Clicking the form submit button clears the form
