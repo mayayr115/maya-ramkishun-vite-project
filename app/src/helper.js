@@ -27,6 +27,16 @@ export const removePalette = (paletteUuid) => {
   getPalettes([...palettes]);
 }
 
+const renderUserPalette = (parent, data) => {
+  const { title, colors, temperature, uuid } = data;
+  const li = document.createElement('li');
+  li.dataset.uuid = uuid;
+  const h2 = document.createElement('h2');
+  h2.innerText = title;
+  const div = document.createElement('div')
+  div.dataset.uuid = temperature;
+}
+
 export {
   setLocalStorageKey,
   getLocalStorageKey,
