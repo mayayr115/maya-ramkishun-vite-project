@@ -22,9 +22,9 @@ export const addPalette = (newPalette) => {
   setPalettes([...newPalettes, newPalette]);
 }
 
-export const removePalette = (paletteUuid) => {
-  const palettes = getPalettes().filter((palette) => palette !== paletteUuid);
-  getPalettes([...palettes]);
+export const removePalette = (uuid) => {
+  const newPalettes = getPalettes().filter(palette => palette.uuid !== uuid);
+  setPalettes(newPalettes);
 }
 
 const renderUserPalette = (parent, data) => {

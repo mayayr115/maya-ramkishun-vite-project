@@ -10,6 +10,13 @@ body {
   justify-content: center;
 }
 
+
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* #section {
   display: flex;
   justify-content: center;
